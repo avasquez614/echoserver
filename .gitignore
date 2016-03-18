@@ -1,0 +1,25 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle
+build/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# IntelliJIdea files#
+*.iml
+.idea

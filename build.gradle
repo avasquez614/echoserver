@@ -1,0 +1,24 @@
+group 'org.avasquez'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin:'application'
+
+mainClassName = 'org.avasquez.echoserver.ServerStartup'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.eclipse.jetty:jetty-server:9.3.7.v20160115'
+    compile 'commons-io:commons-io:2.4'
+}
+
+run {
+    if (project.hasProperty("appArgs")) {
+        args(appArgs.split(','))
+    }
+}
